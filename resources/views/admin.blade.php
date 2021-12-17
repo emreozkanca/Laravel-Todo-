@@ -60,7 +60,9 @@
                 @endif
             </div>
             <span>
+                @if (isset(Auth::user()->role) && Auth::user()->role == 'admin' )
                 {{ $todolists->links()}}
+                @endif
             </span>
             @if (count($todolists))
             @if (isset(Auth::user()->role) && Auth::user()->role == 'admin' )
