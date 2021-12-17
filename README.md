@@ -2,19 +2,12 @@
  Laravel Todo
 
 
-composer install
+1-)composer install
 
-Set up .env file
+2-)Set up .env file
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=YOUR_DATABASE_NAME
-DB_USERNAME=YOUR_DATABASE_USERNAME
-DB_PASSWORD=YOUR_DATABASE_PASSWORD
+3-)Run migration
 
-Run migration
+4-)php artisan migrate
 
-php artisan migrate
-
-php artisan serve
+5-)php artisan serve
