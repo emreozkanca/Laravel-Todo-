@@ -22,7 +22,7 @@ class TodolistController extends Controller
     public function admin(Request $request, User $user)
     {
 
-       $todolists = Todolist::paginate(5);
+       $todolists = Todolist::paginate(10);
        return view('admin', compact('todolists'));
     }
     /**
