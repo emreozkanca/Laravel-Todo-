@@ -56,7 +56,9 @@
                 @endif
             </div>
             <span>
+                @if (isset(Auth::user()->role) && Auth::user()->role == 'user' )
                 {{ $todolists->links()}}
+                @endif
             </span>
             @if (count($todolists))
             @if (isset(Auth::user()->role) && Auth::user()->role == 'user' )
